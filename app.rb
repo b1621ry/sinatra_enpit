@@ -1,13 +1,12 @@
 require 'sinatra'
-
-get '/helloWorld/:name'
+get '/helloWorld/:name' do
 	case params['name']
-	when 'php'
+	when 'php' then
 		"print hello world!"
-	when 'ruby'
+	when 'ruby' then 
 		"p hello world!"
-	when 'javascript'
+	when 'javascript' then
 		"console.log(hello.world!)"
+	end
 end
-
 
